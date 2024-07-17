@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "the-abyss",
+	"version": "${version}",
+	"name": "The Abyss",
+	"description": "The Abyss watches all who enter it's domain...",
+	"authors": [
+		"BasicDamine"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/the-abyss/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.basicdamine.theabyss.TheAbyss"
+		],
+
+		"client": [
+			"net.basicdamine.theabyss.TheAbyssClient"
+		],
+		"fabric-datagen": [
+			"net.basicdamine.theabyss.TheAbyssDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-abyss.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
